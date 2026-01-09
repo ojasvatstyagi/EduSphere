@@ -1,0 +1,154 @@
+/* Modern Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-image: url("../assets/login_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Glassmorphism Container */
+.container {
+  width: 400px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Slightly more opaque for readability */
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #0077b6; /* Ocean Blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Modern Inputs */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.3);
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.signin-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.signin-btn {
+  background-color: #0077b6; /* Primary Blue */
+  color: #fff;
+}
+
+.signin-btn:hover {
+  background-color: #023e8a;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+}
+
+.cancel-btn:hover {
+  background-color: #d9534f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* New User Link */
+.new-user {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+.new-user a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.new-user a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00b4d8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.new-user a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

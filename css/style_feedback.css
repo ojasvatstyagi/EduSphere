@@ -1,0 +1,119 @@
+/* Modern Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-image: url("../assets/asset_library.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  width: 500px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #0077b6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00b4d8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.submit-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.submit-btn {
+  background-color: #0077b6;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #023e8a;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+}
+
+.cancel-btn:hover {
+  background-color: #d9534f;
+  color: white;
+  transform: translateY(-2px);
+}
